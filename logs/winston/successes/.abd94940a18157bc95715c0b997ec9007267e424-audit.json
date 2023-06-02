@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\successes\\.abd94940a18157bc95715c0b997ec9007267e424-audit.json",
+    "files": [
+        {
+            "date": 1685701431621,
+            "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\successes\\phu-2023-06-02-16-success.log",
+            "hash": "74e1bcc53a246099a672a7519c760aec03960dd72d43651bb32527238ce9ad51"
+        }
+    ],
+    "hashType": "sha256"
+}

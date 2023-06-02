@@ -5,12 +5,8 @@ dotenv.config({
   path: path.resolve(process.cwd(), '.env'),
 })
 
-const port = process.env.PORT
-const databaseURL = process.env.DATABASE_URL
-const default_user_password = process.env.DEFAULT_USER_PASS
-
 export default {
-  port,
-  databaseURL,
-  default_user_password,
+  port: process.env.PORT,
+  database_url: process.env.DATABASE_URL,
+  default_user_password: process.env.DEFAULT_USER_PASS,
 }
