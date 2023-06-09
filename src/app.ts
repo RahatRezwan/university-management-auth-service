@@ -17,6 +17,9 @@ app.use('/api/v1/users', UserRoutes)
 
 
 
+
+
+
 /* testing route */
 app.get('/', async(req: Request, res: Response, next: NextFunction) => {
   throw new Error('Something went wrong')
