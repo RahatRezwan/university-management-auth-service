@@ -5,8 +5,14 @@ import app from './app'
 import config from './config/index'
 import { errorLogger, logger } from './shared/logger'
 
+process.on('uncaughtException', error => {
+  errorLogger.error(error)
+  process.exit(1)
+})
+
+let server: Server
+
 async function universityDatabase() {
-  let server: Server
   try {
     await mongoose.connect(`${config.database_url}`)
     logger.info(`Database is connected successfully`)
@@ -18,7 +24,6 @@ async function universityDatabase() {
   }
 
   process.on('unhandledRejection', error => {
-    console.log('unhandledRejection rejection is detected')
     if (server) {
       server.close(() => {
         errorLogger.error(error)
@@ -31,3 +36,11 @@ async function universityDatabase() {
 }
 
 universityDatabase()
+
+process.on("SIGTERM", () => {
+  logger.info("SIGTERM signal received")
+  if (server) {
+    server.close()
+  }
+})
+
