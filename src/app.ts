@@ -16,24 +16,18 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/users', UserRoutes)
 
 /* testing route */
-// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-//   Promise.reject(new Error('Unhandled Promise Rejection'))
-// })
+app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+  throw new Error('Something went wrong')
+})
+
+
+
+
+
+
+
 
 //global error handler
 app.use(globalErrorHandler)
-
-//global error handler
-/* app.use((err, req: Request, res: Response, next: NextFunction) => {
-  if (err instanceof Error) {
-    res.status(400).json({
-      error: err,
-    })
-  } else {
-    res.status(500).json({
-      error: 'Something Went Wrong',
-    })
-  }
-}) */
 
 export default app
