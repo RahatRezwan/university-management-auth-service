@@ -3,7 +3,7 @@ import express, { Application } from 'express'
 const app: Application = express()
 
 //import router
-import globalErrorHandler from './app/middleweres/globalErrorHandler'
+import globalErrorHandler from './app/middleware/globalErrorHandler'
 import { UserRoutes } from './app/modules/user/user.route'
 
 /* Middleware */
@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/users', UserRoutes)
 
 /* testing route */
-app.get('/', async (req: Request, res: Response, next: NextFunction) => {
-  throw new Error('Something went wrong')
-})
+/* app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+  throw new Error('Something went wron')
+}) */
 
 //global error handler
 app.use(globalErrorHandler)
