@@ -20,13 +20,6 @@ app.get('/', async (req: Request, res: Response, next: NextFunction) => {
   throw new Error('Something went wrong')
 })
 
-
-
-
-
-
-
-
 //global error handler
 app.use(globalErrorHandler)
 
