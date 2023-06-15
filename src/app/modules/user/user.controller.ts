@@ -6,9 +6,8 @@ import { UserService } from './user.service';
 
 const createUser = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const { user } = req.body;
+    const { ...user } = req.body;
     const result = await UserService.createUserToDB(user);
-    next();
 
     sendResponse(res, {
       success: true,
@@ -16,6 +15,8 @@ const createUser = catchAsync(
       message: 'User Created Successfully',
       data: result,
     });
+
+    next();
   }
 );
 
