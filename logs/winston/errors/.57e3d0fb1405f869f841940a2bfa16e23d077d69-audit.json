@@ -59,6 +59,16 @@
       "date": 1686873649213,
       "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-16-06-errors.log",
       "hash": "6048b23015d9a6c6f4da8f8d4e89d7cd1cf40b2327063a4f5e430ae1e894c3b6"
+    },
+    {
+      "date": 1686877335790,
+      "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-16-07-errors.log",
+      "hash": "efd6a809f5fe7b6eb2a1819cbdc3f0c1d4687a40b4f690fb83388b50f3b3c656"
+    },
+    {
+      "date": 1686880813479,
+      "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-16-08-errors.log",
+      "hash": "9381894a3eb3671d09bb2456c3f4865889049b133aa232336dba0736b3206ac0"
     }
   ],
   "hashType": "sha256"
