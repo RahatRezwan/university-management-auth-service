@@ -1,7 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
 import httpStatus from 'http-status';
+import { paginationFields } from '../../../constants/pagination';
 import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
+import { IAcademicSemester } from './academicSemester.interface';
 import { AcademicSemesterService } from './academicSemester.service';
 
 const createSemester = catchAsync(
@@ -20,6 +23,26 @@ const createSemester = catchAsync(
   }
 );
 
+const getAllSemesters = catchAsync(
+  async (req: Request, res: Response, next: NextFunction) => {
+    const paginationOptions = pick(req.query, paginationFields);
+
+    const result = await AcademicSemesterService.getAllSemesters(
+      paginationOptions
+    );
+
+    sendResponse<IAcademicSemester[]>(res, {
+      success: true,
+      statusCode: httpStatus.OK,
+      message: 'Academic Semester Fetched Successfully',
+      meta: result.meta,
+      data: result.data,
+    });
+    next();
+  }
+);
+
 export const AcademicSemesterController = {
   createSemester,
+  getAllSemesters,
 };
