@@ -74,6 +74,11 @@
             "date": 1686911359389,
             "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\successes\\phu-2023-06-16-16-success.log",
             "hash": "545d31e04456334e5cabfef83342f39fe52b8ba4327e0a0a516dcb9517b57d69"
+        },
+        {
+            "date": 1687046617894,
+            "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\successes\\phu-2023-06-18-06-success.log",
+            "hash": "4d2b10021d44c7c892a2a06b7154bff6f19254ac9a183401f3931cd4af88f1b4"
         }
     ],
     "hashType": "sha256"
