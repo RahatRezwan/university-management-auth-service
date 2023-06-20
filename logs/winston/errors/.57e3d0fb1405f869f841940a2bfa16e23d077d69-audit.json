@@ -104,6 +104,21 @@
       "date": 1687144539622,
       "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-19-09-errors.log",
       "hash": "58385c9dd0ca9ff9e497fb3e8218395987d701a800cd641dce45f6c059d621d6"
+    },
+    {
+      "date": 1687225635077,
+      "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-20-07-errors.log",
+      "hash": "c82c5161bb3627a6e07ee6b047b361277198be7229288017fc66326a0be65788"
+    },
+    {
+      "date": 1687226629424,
+      "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-20-08-errors.log",
+      "hash": "674bd23552bf63d2f19b7c45041c2af46ff903007493fec93d5f66ba1dcd38ff"
+    },
+    {
+      "date": 1687278452426,
+      "name": "E:\\Programming_Hero_Course\\Next_Level_course\\MileStone-3_Project\\university-management-auth-service-backend\\logs\\winston\\errors\\phu-2023-06-20-22-errors.log",
+      "hash": "a67445e459576905b8a0c0d3d6341685a3fc3a4f87f34cac5e130972974f772f"
     }
   ],
   "hashType": "sha256"
