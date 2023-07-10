@@ -14,3 +14,21 @@ export type IGenericResponse<T> = {
   };
   data: T;
 };
+
+export type IUserName = {
+  firstName: string;
+  lastName: string;
+  middleName?: string;
+};
+
+export type IBloodGroup =
+  | 'A+'
+  | 'A-'
+  | 'B+'
+  | 'B-'
+  | 'AB+'
+  | 'AB-'
+  | 'O+'
+  | 'O-';
+
+export type IGender = 'male' | 'female';
