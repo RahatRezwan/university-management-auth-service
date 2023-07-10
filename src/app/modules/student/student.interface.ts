@@ -1,13 +1,8 @@
 import { Model, Types } from 'mongoose';
+import { IBloodGroup, IGender, IUserName } from '../../../interfaces/common';
 import { IAcademicDepartment } from '../academicDepartment/academicDepartment.interface';
 import { IAcademicFaculty } from '../academicFaculty/academicFaculty.interface';
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
-
-export type UserName = {
-  firstName: string;
-  lastName: string;
-  middleName: string;
-};
 
 export type Guardian = {
   fatherName: string;
@@ -28,13 +23,13 @@ export type LocalGuardian = {
 
 export type IStudent = {
   id: string;
-  name: UserName; //embedded object
-  gender: 'male' | 'female';
+  name: IUserName; //embedded object
+  gender?: IGender;
   dateOfBirth: string;
   email: string;
   contactNo: string;
   emergencyContactNo: string;
-  bloodGroup?: 'A+' | 'A-' | 'B+' | 'B-' | 'AB+' | 'AB-' | 'O+' | 'O-';
+  bloodGroup?: IBloodGroup;
   presentAddress: string;
   permanentAddress: string;
   guardian: Guardian; // embedded object
