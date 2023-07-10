@@ -1,3 +1,4 @@
+/* eslint-disable no-undefined */
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 import { User } from './user.model';
 
@@ -39,7 +40,7 @@ const findLastFacultyId = async () => {
   return lastUser?.id && lastUser?.id.substring(2);
 };
 
-export const generateFacultyID = async (): Promise<string | undefined> => {
+export const generateFacultyID = async (): Promise<string> => {
   const currentId = (await findLastFacultyId()) || '0';
   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
   incrementedId = `F-${incrementedId}`;
